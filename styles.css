@@ -8,7 +8,7 @@ body {
 	margin: 0 0;
 }
 
-@media (min-width: 1440px) and (orientation: landscape) {
+@media (min-width: 800px) and (orientation: landscape) {
 	body {
 		width: 1440px;
 		height: 346px;
@@ -45,13 +45,9 @@ menu {
 		padding: 5px;
 		color: #000000;
 		text-align: center;
-		font-weight: 700;
-		line-height: 28px;
-		letter-spacing: 0em;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 700;
-		line-height: 28px;
 		letter-spacing: 0em;
 		font-style: normal;
 		text-decoration: none;
@@ -73,12 +69,12 @@ menu {
 	margin-top: 20px;
 	width: 30px;
 	height: 30px;
-	margin-right: 40px;
+	margin-right: 17px;
 }
 
 h1 {
 	text-align: center;
-	margin-right: 40px;
+	margin-right: 30px;
 	padding: 102px 17px 60px 17px;
 	font-family: Open Sans;
 	font-size: 48px;
@@ -93,7 +89,8 @@ h1 {
 	height: 250px;
 	image-rendering: pixelated;
 	border-radius: 100%;
-	margin-left: 50px;
+	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -140,7 +137,7 @@ h1 {
 }
 
 .nombre {
-	margin-left: -20px;
+	margin-left: -10px;
 }
 
 .presentacion {
@@ -148,13 +145,13 @@ h1 {
 	width: 200px;
 	height: 193px;
 	font-size: 16px;
-	margin-left: -20px;
+	margin-left: -10px;
 }
 
 .ok {
 	width: 200px;
 	height: 200px;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-bottom: 50px;
 }
 
@@ -200,6 +197,8 @@ h1 {
 }
 
 .two {
+	display: flex;
+	flex-direction: column;
 	width: 375px;
 	height: 1375px;
 	padding: 70px 20px 70px 20px;
@@ -273,18 +272,21 @@ p {
 }
 
 .three {
+	display: grid;
+	align-items: center;
+	justify-content: center;
 	background-color: #141414;
 	color: #fafafa;
-	display: flex;
-	flex-direction: column;
 	width: 375px;
 	height: 660px;
-	align-items: left;
-	padding: 70px 20px 50px 20px;
+	padding: 70px 20px 70px 20px;
 }
 
 input {
+	display: inline-block;
+	height: 30px;
 	width: 305px;
+	padding: 2px 1px 2px 1px;
 }
 
 button {
@@ -318,20 +320,22 @@ button {
 		margin-left: 350px;
 		width: 120px;
 		height: 22px;
-		margin-top: 20px;
+		margin-top: 00px;
 	}
 
 	.formnombre {
-		margin-top: 70px;
+		margin-top: 50px;
+	}
+
+	label {
+		line-height: 20px;
 	}
 }
 
-.footer {
-	width: 375px;
-	height: 495px;
-}
-
 footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-top: 50px;
 	padding: 20px;
 }
